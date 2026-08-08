@@ -1,0 +1,449 @@
+/* Terminal austral. Negro real, monoespaciada, todo dibujado por CSS.
+   Sin fuentes externas ni imagenes de stock: lo unico que se pide afuera son
+   los thumbs de YouTube y los previews en vivo de las Pages. */
+
+:root {
+  --bg: #000;
+  --panel: #070a09;
+  --fg: #d7e0dd;
+  --dim: #6d7b78;
+  --faint: #3a4644;
+  --line: #17201e;
+  --cy: #00e6c3;
+  --mg: #ff2e88;
+  --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+  --wrap: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 7.5rem; }
+
+@media (min-width: 60rem) {
+  html { scroll-padding-top: 6.5rem; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 15px/1.6 var(--mono);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: inherit; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+}
+
+/* Scanlines: casi invisibles, solo para que el negro no sea plano. */
+.scan {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9;
+  background: repeating-linear-gradient(
+    to bottom, rgba(255, 255, 255, .014) 0 1px, transparent 1px 3px);
+}
+
+/* ─── hero ─────────────────────────────────────────────────────────────── */
+
+.hero {
+  border-bottom: 1px solid var(--line);
+  padding: clamp(3rem, 9vw, 6rem) 0 2.25rem;
+  background:
+    radial-gradient(90ch 40ch at 12% -10%, rgba(0, 230, 195, .07), transparent 65%),
+    radial-gradient(70ch 34ch at 88% 0%, rgba(255, 46, 136, .05), transparent 65%);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 8.5vw, 4.6rem);
+  font-weight: 700;
+  letter-spacing: clamp(.02em, 1.1vw, .28em);
+  line-height: 1;
+}
+
+.caret {
+  display: inline-block;
+  width: .5em;
+  height: .84em;
+  margin-left: .28em;
+  background: var(--cy);
+  vertical-align: baseline;
+  animation: blink 1.15s steps(1) infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.lede {
+  margin: 1.15rem 0 0;
+  max-width: 56ch;
+  color: var(--dim);
+  font-size: .95rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 clamp(1.5rem, 5vw, 3.5rem);
+  margin: 2.4rem 0 0;
+}
+
+.stats div { margin: 0; }
+
+.stats dt {
+  color: var(--faint);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.stats dd {
+  margin: .15rem 0 0;
+  font-size: clamp(1.3rem, 3.2vw, 1.75rem);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats dd b { font-weight: 700; color: var(--cy); }
+
+/* ─── barra ────────────────────────────────────────────────────────────── */
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--line);
+  background: rgba(0, 0, 0, .86);
+  backdrop-filter: blur(9px);
+}
+
+.bar .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  padding-block: .7rem;
+}
+
+@media (min-width: 60rem) {
+  .bar .wrap { gap: .55rem 1.1rem; }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex: 1 1 9rem;
+  min-width: 0;
+  border: 1px solid var(--line);
+  padding: .3rem .6rem;
+  background: var(--panel);
+}
+
+.search:focus-within { border-color: var(--cy); }
+
+.prompt { color: var(--cy); }
+
+#q {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  padding: .18rem 0;
+}
+
+#q:focus { outline: none; }
+#q::placeholder { color: var(--faint); }
+#q::-webkit-search-cancel-button { display: none; }
+
+#clear {
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--dim);
+  font: inherit;
+  font-size: .7rem;
+  padding: .05rem .4rem;
+  cursor: pointer;
+}
+
+.chips { display: flex; gap: .3rem; }
+
+.chip {
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--dim);
+  font: inherit;
+  font-size: .78rem;
+  padding: .22rem .7rem;
+  cursor: pointer;
+}
+
+.chip:hover { color: var(--fg); border-color: var(--faint); }
+
+.chip.on {
+  color: #000;
+  background: var(--cy);
+  border-color: var(--cy);
+  font-weight: 700;
+}
+
+/* En angosto la nav de obsesiones se vuelve un carril que se arrastra, para
+   que la barra pegajosa no se coma media pantalla. */
+.jump {
+  display: flex;
+  gap: 0 .85rem;
+  font-size: .72rem;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: .1rem;
+}
+
+.jump::-webkit-scrollbar { display: none; }
+
+@media (min-width: 60rem) {
+  .jump { flex-wrap: wrap; overflow-x: visible; }
+}
+
+.jump a {
+  color: var(--faint);
+  text-decoration: none;
+  letter-spacing: .07em;
+  white-space: nowrap;
+}
+
+.jump a:hover, .jump a.here { color: var(--cy); }
+
+/* ─── secciones ────────────────────────────────────────────────────────── */
+
+.obs {
+  padding-top: clamp(3rem, 7vw, 5rem);
+  scroll-margin-top: 6.5rem;
+}
+
+.obs.off { display: none; }
+
+.obs-head {
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
+  display: grid;
+  gap: .5rem 2.5rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 60rem) {
+  .obs-head { grid-template-columns: minmax(0, 30rem) minmax(0, 1fr); }
+}
+
+.obs-num {
+  color: var(--mg);
+  font-size: .74rem;
+  letter-spacing: .2em;
+}
+
+.obs-head h2 {
+  margin: .1rem 0 .55rem;
+  font-size: clamp(1.35rem, 3.6vw, 2rem);
+  letter-spacing: .04em;
+  font-weight: 700;
+}
+
+.tesis { margin: 0; color: var(--fg); font-size: .95rem; max-width: 46ch; }
+
+.detalle {
+  margin: 0;
+  color: var(--dim);
+  font-size: .84rem;
+  max-width: 62ch;
+  align-self: end;
+}
+
+.tally {
+  margin: 1rem 0 0;
+  color: var(--faint);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.grid {
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+
+/* El li es el que estira a la altura de la fila; la tarjeta tiene que llenarlo
+   o la meta no llega al piso y queda un hueco abajo. */
+.grid > li { display: flex; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--panel);
+  text-decoration: none;
+  transition: background .12s;
+}
+
+.card:hover, .card:focus-visible {
+  background: #0d1211;
+  outline: none;
+}
+
+.card:focus-visible { box-shadow: inset 0 0 0 1px var(--cy); }
+
+.card.off { display: none; }
+
+.shot {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #000;
+  border-bottom: 1px solid var(--line);
+}
+
+.shot iframe, .shot svg, .shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* El preview vivo se renderiza a 1280x800 y se escala: asi la Page se ve
+   como se ve de verdad y no con su layout mobile. */
+.shot iframe {
+  width: 1280px;
+  height: 800px;
+  transform-origin: 0 0;
+  pointer-events: none;
+  filter: saturate(.85);
+}
+
+.shot img { object-fit: cover; }
+
+/* Los thumbs vienen siempre en 16:9. En un short el video vertical ocupa solo
+   la franja del medio (81/256 del ancho) y el resto es negro, asi que se
+   agranda hasta que esa franja llene la tarjeta. Medido sobre un thumb real:
+   la franja da 0.3156 del ancho y pide 2.851; 2.87 deja margen para que no
+   quede una linea negra al costado. */
+.shot img.vert { transform: scale(2.87); }
+
+.card:hover .shot img { filter: brightness(1.08); }
+
+.tag {
+  position: absolute;
+  z-index: 2;
+  top: .5rem;
+  left: .5rem;
+  font-size: .62rem;
+  letter-spacing: .16em;
+  padding: .1rem .42rem;
+  background: #000;
+  border: 1px solid var(--faint);
+  color: var(--dim);
+}
+
+.card[data-t="page"] .tag { color: var(--cy); border-color: var(--cy); }
+.card[data-t="video"] .tag { color: var(--mg); border-color: var(--mg); }
+
+.dur {
+  position: absolute;
+  z-index: 2;
+  right: .5rem;
+  bottom: .5rem;
+  font-size: .68rem;
+  padding: .05rem .35rem;
+  background: #000;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.body {
+  padding: .75rem .85rem .85rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  flex: 1;
+}
+
+/* Recortar a 3 lineas: sin esto una descripcion larga estira toda la fila y
+   deja al resto de las tarjetas flotando. */
+.body h3, .body p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.body h3 {
+  margin: 0;
+  font-size: .87rem;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.card:hover h3 { color: var(--cy); }
+
+.body p {
+  margin: 0;
+  color: var(--dim);
+  font-size: .76rem;
+  line-height: 1.5;
+}
+
+.meta {
+  margin-top: auto;
+  padding-top: .5rem;
+  color: var(--faint);
+  font-size: .68rem;
+  letter-spacing: .06em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 .7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.void {
+  text-align: center;
+  color: var(--dim);
+  padding: 4rem 1rem;
+  margin: 0;
+}
+
+/* ─── pie ──────────────────────────────────────────────────────────────── */
+
+.pie {
+  margin-top: clamp(4rem, 10vw, 7rem);
+  border-top: 1px solid var(--line);
+  padding: 2rem 0 3.5rem;
+  color: var(--faint);
+  font-size: .74rem;
+}
+
+.pie p { margin: 0 0 .5rem; max-width: 64ch; }
+
+.links { display: flex; gap: 1.4rem; }
+.links a { color: var(--dim); text-decoration: none; }
+.links a:hover { color: var(--cy); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .caret { animation: none; }
+}

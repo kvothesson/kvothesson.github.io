@@ -1,0 +1,1295 @@
+{
+ "generado": "2026-08-08 16:21 UTC",
+ "canal": {
+  "titulo": "Kvothesson",
+  "subs": 1320,
+  "videos": 337,
+  "views": 147705
+ },
+ "usuario": "kvothesson",
+ "obsesiones": [
+  {
+   "id": "emergencia",
+   "nombre": "EMERGENCIA",
+   "tesis": "Dejar corriendo un sistema que nadie diseñó y mirar qué aparece.",
+   "detalle": "Bichos ciegos que negocian cuatro palabras sin que nadie se las enseñe, planetas que se ordenan solos. La regla es la misma: no se dibuja el resultado, se dibujan las condiciones y se espera.",
+   "items": [
+    {
+     "tipo": "page",
+     "id": "sistema-solar",
+     "titulo": "sistema-solar",
+     "desc": "🌌 Simulación interactiva completa del sistema solar con HTML5, CSS3 y JavaScript. Incluye los 8 planetas principales con información detallada, controles interactivos y efectos visuales realistas. Optimizado para GitHub Pages.",
+     "url": "https://kvothesson.github.io/sistema-solar/",
+     "repo": "https://github.com/kvothesson/sistema-solar",
+     "fecha": "2025-09-25",
+     "lenguaje": "JavaScript",
+     "stars": 0
+    },
+    {
+     "tipo": "video",
+     "id": "cpMtcKI9W-0",
+     "titulo": "EL POZO 7/9 · Les rompi el canal",
+     "fecha": "2026-08-08",
+     "seg": 28,
+     "views": 105,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "bwvalBtaeUU",
+     "titulo": "EL POZO 6/9 · Una de las 4 palabras es el silencio",
+     "fecha": "2026-08-07",
+     "seg": 34,
+     "views": 15,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "-A2c-D6tukU",
+     "titulo": "EL POZO 5/9 · 12000 generaciones para una palabra",
+     "fecha": "2026-08-06",
+     "seg": 31,
+     "views": 1089,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "OjSQSo25w-k",
+     "titulo": "EL POZO 4/9 · Lenguaje o casualidad?",
+     "fecha": "2026-08-05",
+     "seg": 36,
+     "views": 835,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "dLR35kSu63E",
+     "titulo": "EL POZO 3/9 · Tienen voz y no dicen nada",
+     "fecha": "2026-08-04",
+     "seg": 21,
+     "views": 552,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "KQZWwrwRPQA",
+     "titulo": "EL POZO 2/9 · El que ve no come",
+     "fecha": "2026-08-03",
+     "seg": 27,
+     "views": 224,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "CSZctiW8KDE",
+     "titulo": "EL POZO 1/9 · Le di 4 pozos a un bicho ciego",
+     "fecha": "2026-08-02",
+     "seg": 26,
+     "views": 352,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "YZKc06QMhfA",
+     "titulo": "EL PERMISO · Nadie les dijo que fueran crueles",
+     "fecha": "2026-08-01",
+     "seg": 487,
+     "views": 3,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "dQ45f1OdOro",
+     "titulo": "EL EXPERIMENTO: Nadie te pidió permiso para ser el sujeto 🇦🇷⚡ | Kvothesson",
+     "fecha": "2026-05-01",
+     "seg": 129,
+     "views": 9,
+     "likes": 2
+    }
+   ],
+   "n_pages": 1,
+   "n_videos": 9
+  },
+  {
+   "id": "dato-duro",
+   "nombre": "DATO DURO",
+   "tesis": "La Argentina, medida. El dato existe y casi siempre contradice la intuición.",
+   "detalle": "Fuentes oficiales, INDEC por departamento, georef del IGN. Nada de estimaciones: si el número no se puede rastrear hasta una tabla pública, el video no se hace.",
+   "items": [
+    {
+     "tipo": "page",
+     "id": "argentina-oil-boom",
+     "titulo": "argentina-oil-boom",
+     "desc": "",
+     "url": "https://kvothesson.github.io/argentina-oil-boom/",
+     "repo": "https://github.com/kvothesson/argentina-oil-boom",
+     "fecha": "2026-03-09",
+     "lenguaje": "TypeScript",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "calculadora-firma-hipotecaria-uva-ar",
+     "titulo": "calculadora-firma-hipotecaria-uva-ar",
+     "desc": "Calculadora Hipotecaria UVA para Argentina - Gastos de escritura y análisis de créditos",
+     "url": "https://kvothesson.github.io/calculadora-firma-hipotecaria-uva-ar/",
+     "repo": "https://github.com/kvothesson/calculadora-firma-hipotecaria-uva-ar",
+     "fecha": "2025-09-05",
+     "lenguaje": "JavaScript",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "la-bola",
+     "titulo": "la-bola",
+     "desc": "",
+     "url": "https://kvothesson.github.io/la-bola/",
+     "repo": "https://github.com/kvothesson/la-bola",
+     "fecha": "2026-04-27",
+     "lenguaje": "JavaScript",
+     "stars": 0
+    },
+    {
+     "tipo": "video",
+     "id": "VSGc4O6r3hY",
+     "titulo": "Si cavás derecho desde tu casa, salís en China 🇦🇷 #shorts",
+     "fecha": "2026-08-08",
+     "seg": 40,
+     "views": 189,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "inj0O5QowgE",
+     "titulo": "Ushuaia no es el fin del mundo: es la mitad del país 🇦🇷 #shorts",
+     "fecha": "2026-08-06",
+     "seg": 42,
+     "views": 986,
+     "likes": 31
+    },
+    {
+     "tipo": "video",
+     "id": "99NjjY6A6OQ",
+     "titulo": "El promedio miente: 54,17% de un departamento es extranjero 🇦🇷 #shorts",
+     "fecha": "2026-08-05",
+     "seg": 40,
+     "views": 1236,
+     "likes": 35
+    },
+    {
+     "tipo": "video",
+     "id": "OeP6e1cXDVQ",
+     "titulo": "El mediodía en Argentina no es a las 12 🇦🇷⚡ #shorts",
+     "fecha": "2026-08-04",
+     "seg": 35,
+     "views": 1294,
+     "likes": 29
+    },
+    {
+     "tipo": "video",
+     "id": "MFnK0I9MkFY",
+     "titulo": "Por qué se corta la luz si es la MÁS BARATA de Sudamérica 🇦🇷⚡ #shorts",
+     "fecha": "2026-07-26",
+     "seg": 41,
+     "views": 1245,
+     "likes": 36
+    },
+    {
+     "tipo": "video",
+     "id": "tAakLX9J0kk",
+     "titulo": "LA LEY PRIMERA: 147 años avisándonos 🇦🇷⚡ #shorts",
+     "fecha": "2026-07-24",
+     "seg": 39,
+     "views": 78,
+     "likes": 9
+    },
+    {
+     "tipo": "video",
+     "id": "-SN-QnfiYVU",
+     "titulo": "MALVINAS: El Nodo Que el Atlántico Sur Necesita 🇦🇷⚡ #shorts",
+     "fecha": "2026-07-23",
+     "seg": 38,
+     "views": 1186,
+     "likes": 86
+    },
+    {
+     "tipo": "video",
+     "id": "JUyKLo8yNIY",
+     "titulo": "CEREBRO AUSTRAL: El Nodo Que la Realidad Dejó Afuera 🇦🇷⚡ #shorts",
+     "fecha": "2026-07-23",
+     "seg": 35,
+     "views": 229,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "4ueUOuYsS9w",
+     "titulo": "Las hormigas argentinas ya conquistaron el mundo. Nadie las paró. 🐜⚡",
+     "fecha": "2026-06-25",
+     "seg": 6,
+     "views": 39,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "XJTD3yS5FLs",
+     "titulo": "🇦🇷 ¿Y si Argentina vendiera su FRÍO a la IA? (Archivo 2026) 🧊",
+     "fecha": "2026-01-29",
+     "seg": 147,
+     "views": 154,
+     "likes": 6
+    }
+   ],
+   "n_pages": 3,
+   "n_videos": 10
+  },
+  {
+   "id": "gran-presidente",
+   "nombre": "EL GRAN PRESIDENTE",
+   "tesis": "La historia argentina puesta a juicio por quien no puede opinar: falla.",
+   "detalle": "Tres temporadas más los cruces de San Martín con siete presidentes. El Gran Presidente no da opinión ni ranking: recibe el caso, aplica el criterio y falla.",
+   "items": [
+    {
+     "tipo": "video",
+     "id": "JMyBb1_fLfk",
+     "titulo": "ARGENTINA VS INGLATERRA: La guerra que no vamos a jugar 🇦🇷 | El Gran Presidente",
+     "fecha": "2026-07-14",
+     "seg": 238,
+     "views": 19,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "6jymtyFmWZc",
+     "titulo": "CADENA NACIONAL — Mayo 2026 | El Gran Presidente",
+     "fecha": "2026-05-17",
+     "seg": 288,
+     "views": 21,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "uePHlCdJ7Ts",
+     "titulo": "LA HOJARASCA — El Estado que nunca purgó su memoria | El Gran Presidente",
+     "fecha": "2026-05-10",
+     "seg": 205,
+     "views": 6,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "EF8pkSp8Id4",
+     "titulo": "Le mostramos 7 presidentes a San Martín. Argentina eligió. | El Gran Presidente",
+     "fecha": "2026-05-07",
+     "seg": 77,
+     "views": 447,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "Qf3ddQiS1nY",
+     "titulo": "CFK quiso un país cómodo. San Martín dejó medio continente libre. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 26,
+     "views": 1116,
+     "likes": 11
+    },
+    {
+     "tipo": "video",
+     "id": "IbEt8MEeDzw",
+     "titulo": "Macri dijo que no hay atajo. San Martín cruzó los Andes sin FMI. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 35,
+     "views": 930,
+     "likes": 7
+    },
+    {
+     "tipo": "video",
+     "id": "_EGnkxWSqgc",
+     "titulo": "Perón habló de proyecto nacional. San Martín le respondió cuál era el suyo. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 33,
+     "views": 795,
+     "likes": 16
+    },
+    {
+     "tipo": "video",
+     "id": "YNPbicG3H2Q",
+     "titulo": "De la Rúa reconoció que todos fallaron. San Martín le recordó el helicóptero. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 26,
+     "views": 452,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "-7mSROCqaTo",
+     "titulo": "Menem vendió todo y lo llamó libertad. San Martín le respondió. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 32,
+     "views": 835,
+     "likes": 7
+    },
+    {
+     "tipo": "video",
+     "id": "XNYTjTlyAus",
+     "titulo": "Kirchner habló desde el otro lado. San Martín le respondió. 🇦🇷💀 | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 39,
+     "views": 905,
+     "likes": 15
+    },
+    {
+     "tipo": "video",
+     "id": "zWcTnWIByZ4",
+     "titulo": "Milei prefiere la mafia al Estado. San Martin le respondio. | El Gran Presidente",
+     "fecha": "2026-05-06",
+     "seg": 26,
+     "views": 1250,
+     "likes": 27
+    },
+    {
+     "tipo": "video",
+     "id": "z0ivFQAQJyU",
+     "titulo": "LA CASCADA — El lujo que prometimos no tener | El Gran Presidente T3E2",
+     "fecha": "2026-05-05",
+     "seg": 198,
+     "views": 3,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "6XsUit5HFWw",
+     "titulo": "LOS CEREBROS — Los formamos para el mundo que no supimos construir | El Gran Presidente T3E1",
+     "fecha": "2026-05-01",
+     "seg": 195,
+     "views": 5,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "qam7NQKGKmc",
+     "titulo": "EL 2001 — La semana que Argentina se cayó | El Gran Presidente T2E4",
+     "fecha": "2026-04-23",
+     "seg": 268,
+     "views": 6,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "JBpZD9RAPWQ",
+     "titulo": "LOS GOLPES MILITARES — Seis veces que Argentina se rompió a sí misma | El Gran Presidente T2E3",
+     "fecha": "2026-04-16",
+     "seg": 280,
+     "views": 14,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "u4L5Rjg7ieE",
+     "titulo": "GUERRA DEL PARAGUAY — La victoria que nos destruyó | El Gran Presidente T2E2",
+     "fecha": "2026-04-09",
+     "seg": 230,
+     "views": 262,
+     "likes": 6
+    },
+    {
+     "tipo": "video",
+     "id": "NAImxmu3XqE",
+     "titulo": "MALVINAS — La herida que no cierra | El Gran Presidente T2E1",
+     "fecha": "2026-04-02",
+     "seg": 192,
+     "views": 61,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "lmV0o4fpzMk",
+     "titulo": "Los Presidentes se Juzgan | El Gran Presidente T1E5",
+     "fecha": "2026-04-01",
+     "seg": 196,
+     "views": 21,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "5WeWpx0bpgA",
+     "titulo": "La Pobreza | El Gran Presidente T1E4",
+     "fecha": "2026-03-31",
+     "seg": 154,
+     "views": 38,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "TwXWZhn1RHg",
+     "titulo": "El Dólar | El Gran Presidente T1E3",
+     "fecha": "2026-03-26",
+     "seg": 196,
+     "views": 18,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "WwIFzEjlc48",
+     "titulo": "La Deuda Externa | El Gran Presidente T1E2",
+     "fecha": "2026-03-20",
+     "seg": 162,
+     "views": 14,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "_o5kdBZRMNg",
+     "titulo": "La Inflación | El Gran Presidente T1E1",
+     "fecha": "2026-03-14",
+     "seg": 120,
+     "views": 322,
+     "likes": 5
+    }
+   ],
+   "n_pages": 0,
+   "n_videos": 22
+  },
+  {
+   "id": "corpus",
+   "nombre": "LEER UN CORPUS",
+   "tesis": "Tirarle un montón de material a un modelo y quedarte con algo caminable.",
+   "detalle": "Siete intentos de la misma idea antes de entender que el problema nunca fue el modelo sino el formato. Estas cuatro son las que sobrevivieron: no son CLIs, son cosas que se abren y se recorren.",
+   "items": [
+    {
+     "tipo": "page",
+     "id": "anecdotas",
+     "titulo": "anecdotas",
+     "desc": "",
+     "url": "https://kvothesson.github.io/anecdotas/",
+     "repo": "https://github.com/kvothesson/anecdotas",
+     "fecha": "2026-07-27",
+     "lenguaje": "HTML",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "quipu",
+     "titulo": "quipu",
+     "desc": "Grafo de conocimiento",
+     "url": "https://kvothesson.github.io/quipu/",
+     "repo": "https://github.com/kvothesson/quipu",
+     "fecha": "2026-04-17",
+     "lenguaje": "Python",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "OceaniDex",
+     "titulo": "OceaniDex",
+     "desc": "Analizador de Biodiversidad Marina - Herramienta para analizar la biodiversidad marina a partir de subtítulos de expediciones científicas",
+     "url": "https://kvothesson.github.io/OceaniDex/",
+     "repo": "https://github.com/kvothesson/OceaniDex",
+     "fecha": "2025-08-11",
+     "lenguaje": "Python",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "lyra",
+     "titulo": "lyra",
+     "desc": "",
+     "url": "https://kvothesson.github.io/lyra/",
+     "repo": "https://github.com/kvothesson/lyra",
+     "fecha": "2025-03-30",
+     "lenguaje": "HTML",
+     "stars": 0
+    },
+    {
+     "tipo": "repo",
+     "id": "verbo",
+     "titulo": "verbo",
+     "desc": "Coding agent en tu terminal a costo cero: un solo archivo Python, tiers gratis (Groq/Gemini/OpenRouter) u Ollama local. Universo Austral.",
+     "url": "https://github.com/kvothesson/verbo",
+     "repo": "https://github.com/kvothesson/verbo",
+     "fecha": "2026-08-08",
+     "lenguaje": "Python",
+     "stars": 0
+    },
+    {
+     "tipo": "repo",
+     "id": "ar-plugins",
+     "titulo": "ar-plugins",
+     "desc": "Marketplace de plugins de Claude Code para el ecosistema hispanohablante",
+     "url": "https://github.com/kvothesson/ar-plugins",
+     "repo": "https://github.com/kvothesson/ar-plugins",
+     "fecha": "2026-06-02",
+     "lenguaje": "",
+     "stars": 4
+    },
+    {
+     "tipo": "video",
+     "id": "HEUP6tR-d68",
+     "titulo": "La IA Indexó 279 Anécdotas en 57 Minutos — Cerebro Austral | Kvothesson",
+     "fecha": "2026-04-26",
+     "seg": 227,
+     "views": 116,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "dHqexqO2tcc",
+     "titulo": "EL STACK — Cómo se construyó el universo | Kvothesson",
+     "fecha": "2026-04-13",
+     "seg": 108,
+     "views": 4,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "E11i7fC9vQg",
+     "titulo": "MYTHOS — El modelo que nos dio tiempo (y lo que vino después) | Kvothesson Lore",
+     "fecha": "2026-04-10",
+     "seg": 313,
+     "views": 46,
+     "likes": 5
+    }
+   ],
+   "n_pages": 4,
+   "n_videos": 3
+  },
+  {
+   "id": "austral",
+   "nombre": "UNIVERSO AUSTRAL",
+   "tesis": "Folklore argentino corriendo sobre fibra óptica. Ficción, terror y mitología.",
+   "detalle": "El Archivo Onírico, los dioses selknam del fin del mundo, el bestiario de la Ruta 404. En el terror la entidad no se dibuja: se dibuja el agujero que deja.",
+   "items": [
+    {
+     "tipo": "page",
+     "id": "kvothesson-game",
+     "titulo": "kvothesson-game",
+     "desc": "AUSTRAL // PoC de movimiento: side-scroller 2D con Kvothesson. Sprite sheet generado por IA con protocolo de anclaje, y motor con animacion guiada por distancia recorrida.",
+     "url": "https://kvothesson.github.io/kvothesson-game/",
+     "repo": "https://github.com/kvothesson/kvothesson-game",
+     "fecha": "2026-08-03",
+     "lenguaje": "Python",
+     "stars": 0
+    },
+    {
+     "tipo": "page",
+     "id": "tajo",
+     "titulo": "tajo",
+     "desc": "Arcade roguelite sin arma: el tajo es el arma. Cero assets binarios, todo dibujado y sintetizado por codigo. 14 kB gzip.",
+     "url": "https://kvothesson.github.io/tajo/",
+     "repo": "https://github.com/kvothesson/tajo",
+     "fecha": "2026-08-08",
+     "lenguaje": "TypeScript",
+     "stars": 0
+    },
+    {
+     "tipo": "repo",
+     "id": "pombero-exe",
+     "titulo": "pombero-exe",
+     "desc": "",
+     "url": "https://github.com/kvothesson/pombero-exe",
+     "repo": "https://github.com/kvothesson/pombero-exe",
+     "fecha": "2025-12-20",
+     "lenguaje": "Python",
+     "stars": 2
+    },
+    {
+     "tipo": "video",
+     "id": "EZIKmU2_ksE",
+     "titulo": "SUEÑO #062: Volar No Alcanza | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-08-04",
+     "seg": 64,
+     "views": 22,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "5YZam2Q5ynI",
+     "titulo": "ALEPH: el amigo que se fue a la red 🇦🇷⚡ #shorts",
+     "fecha": "2026-08-03",
+     "seg": 34,
+     "views": 672,
+     "likes": 12
+    },
+    {
+     "tipo": "video",
+     "id": "dw_d9C_lEbg",
+     "titulo": "SUEÑO #048: El Laberinto sin Salida | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-31",
+     "seg": 65,
+     "views": 42,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "lzWg2azRb0Q",
+     "titulo": "SUEÑO #076: El Examen que Nadie Estudió | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-28",
+     "seg": 79,
+     "views": 14,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "2l0NW_PBtas",
+     "titulo": "EL UNCIDO ⛓️ El gaucho que no eligió — Ruta 404 | Universo Austral",
+     "fecha": "2026-07-28",
+     "seg": 185,
+     "views": 7,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "-7AXju4xIoA",
+     "titulo": "SUEÑO #404: La Ciudad Recortada | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-25",
+     "seg": 73,
+     "views": 302,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "ha2oQvaTzNk",
+     "titulo": "SUEÑO #031: La Alabarda de Relámpagos | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-22",
+     "seg": 57,
+     "views": 28,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "j6E-VF706PE",
+     "titulo": "SUEÑO #023: La Luz que Juzga | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-19",
+     "seg": 65,
+     "views": 46,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "NwiO-B9nTko",
+     "titulo": "ARGENTINA vs SPAIN - 1813 ANIME EDITION",
+     "fecha": "2026-07-19",
+     "seg": 204,
+     "views": 618,
+     "likes": 18
+    },
+    {
+     "tipo": "video",
+     "id": "sXesKCCRgP8",
+     "titulo": "SUEÑO #019: La Pantalla que Implosiona | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-16",
+     "seg": 56,
+     "views": 134,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "Nx2rPwGd1vI",
+     "titulo": "ARGENTINA vs ENGLAND - 1806 ANIME EDITION",
+     "fecha": "2026-07-15",
+     "seg": 31,
+     "views": 55,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "63mu1xE7ebY",
+     "titulo": "SUEÑO #012: La Guerra que No Termina | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-13",
+     "seg": 56,
+     "views": 32,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "xj_0BKoDNFU",
+     "titulo": "SUEÑO #007: La Araña que Teje el Sol | Archivo Onírico 🇦🇷⚡",
+     "fecha": "2026-07-12",
+     "seg": 53,
+     "views": 90,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "ZofpL9wK3_E",
+     "titulo": "EL ARCHIVO ONÍRICO: La Red que Escucha Dormidos",
+     "fecha": "2026-07-11",
+     "seg": 61,
+     "views": 183,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "61237_h6b_E",
+     "titulo": "Un té en la biblioteca - Borges y Messi conversando",
+     "fecha": "2026-07-09",
+     "seg": 304,
+     "views": 64,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "tiLYtvKdbhk",
+     "titulo": "RENDOUS 👁️ El loop no se repite. Te repite. | Horror Cósmico",
+     "fecha": "2026-07-06",
+     "seg": 31,
+     "views": 20,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "q415OhL_tSA",
+     "titulo": "EL REFLEJO SONRÍE: ¿vos también lo viste sonreír? 🚇👁️",
+     "fecha": "2026-07-05",
+     "seg": 16,
+     "views": 38,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "rB7c0gss9-E",
+     "titulo": "EL FRAGMENTADOR: El sistema no te deja irte 🇦🇷⚡",
+     "fecha": "2026-07-01",
+     "seg": 24,
+     "views": 46,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "vJPPtp_Tr6Q",
+     "titulo": "CACHÓN: La Criatura que No Termina de Parpadear 🇦🇷⚡",
+     "fecha": "2026-06-29",
+     "seg": 24,
+     "views": 26,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "-TvF6aCEmgg",
+     "titulo": "LA LUZ MALA: ¿Cuántas veces ya pasaste por acá? 🇦🇷",
+     "fecha": "2026-06-29",
+     "seg": 24,
+     "views": 245,
+     "likes": 6
+    },
+    {
+     "tipo": "video",
+     "id": "99SZw_5PkBY",
+     "titulo": "TATU-NIL: El error que no se puede borrar",
+     "fecha": "2026-06-28",
+     "seg": 33,
+     "views": 30,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "t7-wsmFg3kI",
+     "titulo": "Borges y Yo 🌌 El Sistema que Aprendió a Existir sin su Creador | Borges Cyberpunk",
+     "fecha": "2026-06-23",
+     "seg": 161,
+     "views": 16,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "WoxUcxAo8XE",
+     "titulo": "El secreto que los hombres Selknam ocultaron por miles de años #HAIN #shorts",
+     "fecha": "2026-06-12",
+     "seg": 29,
+     "views": 317,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "N-THmcdWTSo",
+     "titulo": "HAIN — Trailer Conceptual | Anime Selknam 🇦🇷",
+     "fecha": "2026-06-08",
+     "seg": 50,
+     "views": 15,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "0ZlEcWS8k34",
+     "titulo": "TACHWIY Nada se borra | Dioses del Fin del Mundo | NODO USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 68,
+     "views": 85,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "WKykFlGC_r8",
+     "titulo": "XALPEN La falla que no cierra | NODO USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 70,
+     "views": 86,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "iqkhgkfInmo",
+     "titulo": "SHOORT El protocolo sin kill switch | NODO USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 77,
+     "views": 116,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "qRskGKk2q-M",
+     "titulo": "KUSH ya escucho todo | Dioses del Fin del Mundo | NODO USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 70,
+     "views": 154,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "sGQp7LhYaQY",
+     "titulo": "WATAUINEWA te habla | Dioses del Fin del Mundo | NODO USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 64,
+     "views": 128,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "_J3ZBb022Yo",
+     "titulo": "DIOSES DEL FIN DEL MUNDO - Watauinewa, Xalpen, Shoort, Tachwiy, Kush | NODO /USHUAIA",
+     "fecha": "2026-05-30",
+     "seg": 315,
+     "views": 27,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "9m6i8ghf0Go",
+     "titulo": "¿A qué clan perteneces? 👁️ Las Tribus de 2030",
+     "fecha": "2026-02-07",
+     "seg": 26,
+     "views": 1636,
+     "likes": 26
+    },
+    {
+     "tipo": "video",
+     "id": "gdYVYzUyFWA",
+     "titulo": "El último adiós de Gustavo (Versión 2026) 💾💔",
+     "fecha": "2026-01-31",
+     "seg": 6,
+     "views": 2906,
+     "likes": 32
+    },
+    {
+     "tipo": "video",
+     "id": "gGHAl3ojhPw",
+     "titulo": "La simulación se rompió: Cerati te habla directamente ⚡️",
+     "fecha": "2026-01-31",
+     "seg": 5,
+     "views": 3130,
+     "likes": 37
+    },
+    {
+     "tipo": "video",
+     "id": "ff2GjkQf7j8",
+     "titulo": "CERATI 2026: El Bucle de la Memoria Austral (Cyberpunk Short Film)",
+     "fecha": "2026-01-31",
+     "seg": 60,
+     "views": 1939,
+     "likes": 41
+    },
+    {
+     "tipo": "video",
+     "id": "kxsyiu2b4vI",
+     "titulo": "[RITUAL_404]: La Fe en el Código 👁️💾 #Cyberpunk",
+     "fecha": "2026-01-27",
+     "seg": 33,
+     "views": 1023,
+     "likes": 19
+    },
+    {
+     "tipo": "video",
+     "id": "in8cJGHKiyo",
+     "titulo": "Rendous 👾 La Anomalía | Lo Que No Debe Ser (Cyberpunk Oscuro)",
+     "fecha": "2025-02-13",
+     "seg": 213,
+     "views": 282,
+     "likes": 3
+    }
+   ],
+   "n_pages": 2,
+   "n_videos": 36
+  },
+  {
+   "id": "musica",
+   "nombre": "MÚSICA",
+   "tesis": "Himnos para próceres y para dioses que no tuvieron banda de sonido.",
+   "detalle": "Zambas y chacareras para San Martín, Güemes y Belgrano; himnos en latín, griego antiguo y nórdico antiguo. Todo generado, todo con letra escrita para que cierre en el idioma original.",
+   "items": [
+    {
+     "tipo": "video",
+     "id": "vd4x5dQxwEQ",
+     "titulo": "Belgrano Inmortal 🇦🇷 Chacarera Épica \"El que cosió el cielo\" | Homenaje Visual (IA)",
+     "fecha": "2026-06-18",
+     "seg": 148,
+     "views": 294,
+     "likes": 16
+    },
+    {
+     "tipo": "video",
+     "id": "LOIphgkLtSQ",
+     "titulo": "Güemes Inmortal 🇦🇷 Zamba Épica \"La Zamba de Güemes\" | Homenaje Visual (IA)",
+     "fecha": "2026-06-14",
+     "seg": 169,
+     "views": 225,
+     "likes": 8
+    },
+    {
+     "tipo": "video",
+     "id": "WntlyaXzfDA",
+     "titulo": "BESTIARIO AUSTRAL — Canciones de los Dioses Originarios | NODO /USHUAIA",
+     "fecha": "2026-05-31",
+     "seg": 1351,
+     "views": 35,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "hh1sbPNjTkg",
+     "titulo": "25 de Mayo 🇦🇷 Zamba \"Primer Amanecer\" | Homenaje a la Revolución de Mayo (IA)",
+     "fecha": "2026-05-25",
+     "seg": 189,
+     "views": 117,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "2gGfuV1aWrQ",
+     "titulo": "Sacrificium et Silentium 🌅 The Sacrifice | Sad Latin Ballad",
+     "fecha": "2025-10-11",
+     "seg": 281,
+     "views": 46,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "AhOYOl-mUDw",
+     "titulo": "Tempestas Machinarum 🌐 The Machine Storm | Cyberpunk Latin Choir",
+     "fecha": "2025-10-08",
+     "seg": 222,
+     "views": 11,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "4D7bLr66iUE",
+     "titulo": "Vox Sapientiae 🔮 The Oracle | Mystical Latin Choir",
+     "fecha": "2025-10-06",
+     "seg": 245,
+     "views": 386,
+     "likes": 12
+    },
+    {
+     "tipo": "video",
+     "id": "1RUvO4skceU",
+     "titulo": "Bellum Interius ⚔️ The Inner Battle | Dark Choral Music",
+     "fecha": "2025-10-04",
+     "seg": 221,
+     "views": 45,
+     "likes": 2
+    },
+    {
+     "tipo": "video",
+     "id": "cJf8XdDBknU",
+     "titulo": "Prologus: Vocatio 🌌 The Divine Call | Epic Latin Hymn",
+     "fecha": "2025-10-03",
+     "seg": 201,
+     "views": 132,
+     "likes": 7
+    },
+    {
+     "tipo": "video",
+     "id": "6djUbYARzW0",
+     "titulo": "Apotheosis ✨ Path to Eternity | Epic Finale Hymn",
+     "fecha": "2025-10-02",
+     "seg": 315,
+     "views": 16,
+     "likes": 0
+    },
+    {
+     "tipo": "video",
+     "id": "0CCjAwITJ_E",
+     "titulo": "Rúnar Galdr 🔮 Old Norse Shamanic Chant | The Runes",
+     "fecha": "2025-09-17",
+     "seg": 176,
+     "views": 455,
+     "likes": 9
+    },
+    {
+     "tipo": "video",
+     "id": "hHd4BBsEDuQ",
+     "titulo": "Sverð ok Blóð ⚔️ Viking War Music | Sword & Blood",
+     "fecha": "2025-09-16",
+     "seg": 202,
+     "views": 151,
+     "likes": 1
+    },
+    {
+     "tipo": "video",
+     "id": "MuPxB-4Pe6c",
+     "titulo": "Heljar Kall 💀 Dark Viking Music | The Underworld",
+     "fecha": "2025-09-14",
+     "seg": 225,
+     "views": 181,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "uTeY-CpL9jE",
+     "titulo": "Þórs Þrumr ⚡ Thor’s Thunder | Powerful Viking Drums",
+     "fecha": "2025-09-12",
+     "seg": 151,
+     "views": 348,
+     "likes": 8
+    },
+    {
+     "tipo": "video",
+     "id": "7UnJioriQxE",
+     "titulo": "Óðinns Hymn 👁️ Chant to Odin | Old Norse Ritual Music",
+     "fecha": "2025-09-11",
+     "seg": 169,
+     "views": 369,
+     "likes": 8
+    },
+    {
+     "tipo": "video",
+     "id": "BegIi3pswc0",
+     "titulo": "Victoria Aeterna 🏛️ Epic Roman Music | Powerful Latin Hymn (AI Generated)",
+     "fecha": "2025-09-10",
+     "seg": 215,
+     "views": 1676,
+     "likes": 46
+    },
+    {
+     "tipo": "video",
+     "id": "uyalpbpFhiM",
+     "titulo": "Bacchica 🍷 Song of Bacchus | Festive Latin Music",
+     "fecha": "2025-09-09",
+     "seg": 146,
+     "views": 253,
+     "likes": 15
+    },
+    {
+     "tipo": "video",
+     "id": "r67Lnpe-Zfc",
+     "titulo": "Hymnus Pacis 🕊️ Hymn to Peace | Solemn Latin Choir",
+     "fecha": "2025-09-08",
+     "seg": 175,
+     "views": 78,
+     "likes": 3
+    },
+    {
+     "tipo": "video",
+     "id": "NypYuhBdd6E",
+     "titulo": "Cantus Veneris 🌹 Song to Venus | Lyrical Latin Music",
+     "fecha": "2025-09-07",
+     "seg": 126,
+     "views": 504,
+     "likes": 17
+    },
+    {
+     "tipo": "video",
+     "id": "JsYD-yOipKQ",
+     "titulo": "Gloria Martis ⚔️ Hymn to Mars | Epic War Music",
+     "fecha": "2025-09-06",
+     "seg": 202,
+     "views": 633,
+     "likes": 12
+    },
+    {
+     "tipo": "video",
+     "id": "x8DUUFBQIWw",
+     "titulo": "Invocatio Musarum 🎭 Invocation of the Muses | Latin Choir",
+     "fecha": "2025-09-05",
+     "seg": 270,
+     "views": 181,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "ad9fj1zanEk",
+     "titulo": "Hymnus Solis ☀️ Hymn to the Sun | Epic Renaissance Music",
+     "fecha": "2025-09-04",
+     "seg": 147,
+     "views": 286,
+     "likes": 11
+    },
+    {
+     "tipo": "video",
+     "id": "UIKpzjta1c4",
+     "titulo": "ANCIENT GREEK HYMNS 🏛️ Full Album | The 7 Gods (AI Generated)",
+     "fecha": "2025-09-03",
+     "seg": 1386,
+     "views": 232,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "2iUXcxckT9U",
+     "titulo": "Διονύσου Χορός 🍇 Dance of Dionysus | Ancient Greek Festive Music",
+     "fecha": "2025-09-02",
+     "seg": 137,
+     "views": 1292,
+     "likes": 32
+    },
+    {
+     "tipo": "video",
+     "id": "EffVBvxDpBg",
+     "titulo": "Ὕμνος Εἰρήνης 🕊️ Hymn to Peace | Ancient Greek Choral",
+     "fecha": "2025-09-01",
+     "seg": 178,
+     "views": 351,
+     "likes": 11
+    },
+    {
+     "tipo": "video",
+     "id": "8MbMzbIaj88",
+     "titulo": "Παιὰν Νίκης 🏆 Hymn to Victory | Epic Greek Music",
+     "fecha": "2025-08-31",
+     "seg": 217,
+     "views": 359,
+     "likes": 14
+    },
+    {
+     "tipo": "video",
+     "id": "gld9f3eBPKY",
+     "titulo": "Μοῦσαι ἐπικαλεῖμαι 🎭 Invocation of the Muses | Ancient Greek Chant",
+     "fecha": "2025-08-31",
+     "seg": 250,
+     "views": 300,
+     "likes": 9
+    },
+    {
+     "tipo": "video",
+     "id": "bG9dULcSP2o",
+     "titulo": "Ὀδύσσεια ⛵ The Odyssey | Epic Musical Journey (Ancient Greek)",
+     "fecha": "2025-08-29",
+     "seg": 232,
+     "views": 224,
+     "likes": 9
+    },
+    {
+     "tipo": "video",
+     "id": "hV7DTtASCjc",
+     "titulo": "Παιὰν Ἀπόλλωνι ☀️ Hymn to Apollo | Ancient Greek Paean",
+     "fecha": "2025-08-25",
+     "seg": 113,
+     "views": 755,
+     "likes": 11
+    },
+    {
+     "tipo": "video",
+     "id": "kJJgGuZeoUE",
+     "titulo": "Ὕμνος θεῶν ⚡ Hymn to the Olympic Gods | Ancient Greek Epic",
+     "fecha": "2025-08-25",
+     "seg": 262,
+     "views": 697,
+     "likes": 23
+    },
+    {
+     "tipo": "video",
+     "id": "WOGe4rAtgOU",
+     "titulo": "San Martín Inmortal 🇦🇷 Zamba Épica \"Paso de la Libertad\" | Homenaje Visual (IA)",
+     "fecha": "2025-08-17",
+     "seg": 198,
+     "views": 5054,
+     "likes": 86
+    },
+    {
+     "tipo": "video",
+     "id": "W7CIr9Y77cQ",
+     "titulo": "Zamba del 9 de Julio 🇦🇷 Grito Libertador | Música Folklórica",
+     "fecha": "2025-07-09",
+     "seg": 155,
+     "views": 939,
+     "likes": 18
+    },
+    {
+     "tipo": "video",
+     "id": "yVSdLtIuQpU",
+     "titulo": "Vencimos a la Muerte 🎸 Rock Nacional Futurista | Inmortalidad Digital",
+     "fecha": "2025-05-27",
+     "seg": 239,
+     "views": 373,
+     "likes": 8
+    },
+    {
+     "tipo": "video",
+     "id": "3GxGCoLWpes",
+     "titulo": "El Inmortal 🏛️ La Ciudad de los Inmortales | Visual Story",
+     "fecha": "2025-03-02",
+     "seg": 187,
+     "views": 231,
+     "likes": 8
+    },
+    {
+     "tipo": "video",
+     "id": "2Rmq2Pig2HM",
+     "titulo": "Cha-La Head-Cha-La 🐉 Epic Viking Synthwave Cover | Dragon Ball Z Remix",
+     "fecha": "2025-01-19",
+     "seg": 466,
+     "views": 506,
+     "likes": 4
+    },
+    {
+     "tipo": "video",
+     "id": "oy17y-Wfnsw",
+     "titulo": "VIKING SAGA: Rúnar og Sögur 🛡️ Dark Nordic Folk | Full Album (Old Norse)",
+     "fecha": "2024-12-21",
+     "seg": 1670,
+     "views": 405,
+     "likes": 12
+    },
+    {
+     "tipo": "video",
+     "id": "PET58zX2YMs",
+     "titulo": "VOICES OF ROME 🏛️ Ancient Roman Music | Epic Latin Album (Harmonia Antiqua)",
+     "fecha": "2024-12-12",
+     "seg": 2007,
+     "views": 696,
+     "likes": 11
+    },
+    {
+     "tipo": "video",
+     "id": "qMO9J-U2vbI",
+     "titulo": "CYBER RAGNAROK 🦾 Viking Synthwave Mix | Epic Gaming Music (40 Min)",
+     "fecha": "2024-12-08",
+     "seg": 2423,
+     "views": 277,
+     "likes": 5
+    },
+    {
+     "tipo": "video",
+     "id": "wcIJhrXyTI8",
+     "titulo": "Himnos Perdidos 📜 Ancient Languages Music | Sumerian, Egyptian & Latin (AI)",
+     "fecha": "2024-12-08",
+     "seg": 1233,
+     "views": 1323,
+     "likes": 39
+    },
+    {
+     "tipo": "video",
+     "id": "K_M4O3JzADM",
+     "titulo": "Viking Warriors ⚔️ Brave Combat | Cinematic AI Video",
+     "fecha": "2023-09-18",
+     "seg": 59,
+     "views": 318,
+     "likes": 6
+    }
+   ],
+   "n_pages": 0,
+   "n_videos": 40
+  }
+ ]
+}
