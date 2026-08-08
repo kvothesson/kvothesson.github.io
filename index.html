@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kvothesson — índice</title>
+<meta name="description" content="Todo lo que corre y todo lo que se ve, agrupado por obsesión.">
+<meta property="og:title" content="Kvothesson — índice">
+<meta property="og:description" content="Todo lo que corre y todo lo que se ve, agrupado por obsesión.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23000'/><rect x='3' y='3' width='10' height='10' fill='none' stroke='%2300e6c3' stroke-width='1.5'/></svg>">
+</head>
+<body>
+
+<div class="scan" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <h1>KVOTHESSON<span class="caret" aria-hidden="true"></span></h1>
+      <p class="lede">Todo lo que corre y todo lo que se ve, agrupado por obsesión y no por fecha.</p>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </div>
+</header>
+
+<nav class="bar" id="bar">
+  <div class="wrap">
+    <div class="search">
+      <span class="prompt" aria-hidden="true">&gt;</span>
+      <input id="q" type="search" placeholder="buscar   (tecla /)" autocomplete="off" spellcheck="false" aria-label="Buscar en el índice">
+      <button id="clear" type="button" hidden aria-label="Limpiar búsqueda">esc</button>
+    </div>
+    <div class="chips" role="group" aria-label="Filtrar por tipo">
+      <button class="chip on" data-f="todo">todo</button>
+      <button class="chip" data-f="page">corre</button>
+      <button class="chip" data-f="video">se ve</button>
+    </div>
+    <div class="jump" id="jump"></div>
+  </div>
+</nav>
+
+<main id="main" class="wrap"></main>
+
+<p class="void" id="void" hidden>nada matchea eso.</p>
+
+<footer class="pie">
+  <div class="wrap">
+    <p id="pie-txt"></p>
+    <p class="links">
+      <a href="https://github.com/kvothesson">github.com/kvothesson</a>
+      <a href="https://www.youtube.com/channel/UCubQ5dgtAK878M-lbDyoAuQ">el canal</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
