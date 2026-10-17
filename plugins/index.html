@@ -6,7 +6,7 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://kvothesson.com/plugins/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="AR Plugins: Claude Code para vivir en Argentina">
+<meta property="og:title" content="AR Plugins: Claude Code y Codex para vivir en Argentina">
 <meta property="og:description" content="15 plugins gratis y abiertos para Claude Code y Codex: dólar e inflación en vivo, trámites, sueldos, derechos, salud, facturación del monotributo. Se instalan en una línea.">
 <meta property="og:url" content="https://kvothesson.com/plugins/">
 <meta property="og:locale" content="es_AR">
@@ -80,6 +80,8 @@ h1 em { font-style: normal; color: var(--sky); }
 .term .row { display: flex; align-items: center; gap: .75rem; justify-content: space-between; }
 .term .cmd { min-width: 0; overflow-wrap: anywhere; }
 .term .cmd::before { content: "> "; color: var(--term-dim); }
+.term .cmd.sh::before { content: "$ "; }
+.install .tool { font-family: var(--mono); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: .5rem; }
 .term .note { color: var(--term-dim); font-size: .8rem; }
 .copy {
   flex: none; font: 600 .75rem var(--mono); color: var(--term-fg);
@@ -91,6 +93,7 @@ h1 em { font-style: normal; color: var(--sky); }
 .install p { font-size: .95rem; color: var(--muted); }
 
 section { display: grid; gap: 1.5rem; }
+.hint { font-size: .95rem; color: var(--muted); margin-top: -.75rem; }
 h2 { font-size: 1.7rem; font-weight: 700; }
 .group { display: grid; gap: .9rem; }
 .group h3 { font-family: var(--mono); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
@@ -118,22 +121,30 @@ footer { display: grid; gap: .6rem; font-size: .93rem; color: var(--muted); bord
 <div class="wrap">
 
 <header>
-  <span class="kicker">ar-plugins · gratis y de código abierto</span>
-  <h1>Claude Code para <em>vivir en Argentina</em></h1>
+  <span class="kicker">ar-plugins · gratis, abiertos, para Claude Code y Codex</span>
+  <h1>Claude Code y Codex, <em>para vivir en Argentina</em></h1>
   <p class="lede">Quince plugins que le dan a tu agente lo que no sabe de acá: el dólar y la inflación de hoy, cómo se saca un turno, cuánto se cobra, qué dice la ley y cómo se factura el monotributo. Con fuentes oficiales y en lenguaje llano.</p>
 </header>
 
 <div class="install">
-  <div class="term" role="group" aria-label="Instalación">
+  <h3 class="tool">Claude Code</h3>
+  <div class="term" role="group" aria-label="Instalación en Claude Code">
     <div class="row"><span class="cmd">/plugin marketplace add kvothesson/ar-plugins</span><button class="copy" type="button">copiar</button></div>
     <div class="row"><span class="cmd">/plugin install arca@ar-plugins</span><button class="copy" type="button">copiar</button></div>
     <span class="note">Dentro de Claude Code. Cambiá <code>arca</code> por cualquier plugin de abajo.</span>
   </div>
-  <p>¿Usás Codex? Cada plugin trae su <code>AGENTS.md</code>: cloná el repo y abrí <code>codex</code> adentro. Los pasos están en el <a href="https://github.com/kvothesson/ar-plugins#instalación">README</a>.</p>
+  <h3 class="tool">Codex</h3>
+  <div class="term" role="group" aria-label="Instalación en Codex">
+    <div class="row"><span class="cmd sh">git clone https://github.com/kvothesson/arca ~/plugins/arca</span><button class="copy" type="button">copiar</button></div>
+    <div class="row"><span class="cmd sh">cd ~/plugins/arca &amp;&amp; codex</span><button class="copy" type="button">copiar</button></div>
+    <span class="note">En la terminal. Cada plugin trae su <code>AGENTS.md</code> y Codex lo lee solo. Cambiá <code>arca</code> por el que quieras.</span>
+  </div>
+  <p>Más opciones, como cargar varios plugins a la vez, en el <a href="https://github.com/kvothesson/ar-plugins#instalación">README</a>.</p>
 </div>
 
 <section aria-labelledby="catalogo">
   <h2 id="catalogo">Los plugins</h2>
+  <p class="hint">Los comandos son de Claude Code. En Codex pedilo con tus palabras, por ejemplo: «¿cuánto está el blue hoy?».</p>
   <div id="grupos"></div>
 </section>
 
