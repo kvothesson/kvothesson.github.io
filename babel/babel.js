@@ -104,7 +104,80 @@ const COMUNES = [
   'mi primera palabra fue agua.',
   'cerrar con llave al salir.',
 ];
-const SILABAS = ['ul', 'aer', 'im', 'os', 'van', 'eth', 'ir', 'qu', 'ens', 'oz', 'ma', 'ith', 'nu', 'sar'];
+
+// Gramáticas: cada plantilla es una lista de piezas, texto fijo o lista de opciones.
+// Las listas de arriba quedan como una plantilla más; el resto se compone y da millones de variantes.
+const QUIEN = ['mi abuela', 'el vecino del quinto', 'la profe de historia', 'tu primo', 'el portero', 'la chica del almacen', 'mi viejo', 'el kiosquero', 'nadie', 'alguien', 'el remisero', 'la tia norma', 'un senor de sombrero', 'el pibe de la bici', 'la doctora', 'mi hermana', 'el plomero', 'la del tercero'];
+const HIZO = ['dejo las llaves', 'se olvido el paraguas', 'pregunto por vos', 'canto toda la noche', 'trajo facturas', 'no aviso', 'se quedo dormido', 'llamo dos veces', 'dejo una nota', 'perdio el colectivo', 'barrio la vereda', 'pidio prestada la escalera', 'vio un perro igual al nuestro', 'gano en la quiniela', 'rompio un vaso'];
+const DONDE = ['en la esquina de siempre', 'en la parada', 'en el balcon', 'en la cocina', 'en el club', 'en la plaza', 'en el ascensor', 'en la puerta', 'en la terminal', 'en lo de la abuela', 'en el patio', 'en la feria', 'en el anden', 'arriba de la heladera'];
+const TAREA = ['comprar pan', 'pagar la luz', 'regar las plantas', 'sacar turno con el dentista', 'devolver el libro', 'arreglar la canilla', 'llamar a mama', 'pasar a buscar a los chicos', 'cargar la sube', 'renovar el documento', 'sacar la basura', 'comprar yerba', 'llevar el auto al taller', 'cortar el pasto', 'contestar el mail de laura', 'bajar la ropa', 'pedir la receta', 'cambiar la lamparita'];
+const CUANDO = ['antes del viernes', 'el martes a las diez', 'manana sin falta', 'cuando vuelva', 'despues del almuerzo', 'esta semana', 'a primera hora', 'el sabado', 'antes de que llueva', 'hoy si o si', 'cuando cobre', 'a la vuelta'];
+const SUCESO = ['llovio toda la tarde', 'no paso nada', 'se corto la luz', 'vino el abuelo', 'hice ravioles', 'perdimos el partido', 'encontre una foto vieja', 'el gato no volvio', 'llegue tarde otra vez', 'me reconcilie con ana', 'hubo granizo', 'pinte la puerta de verde', 'aprendi a hacer pan', 'me mude'];
+const OBJETO = ['bicicleta', 'heladera', 'cuna', 'guitarra', 'mesa de algarrobo', 'colchon', 'enciclopedia', 'televisor', 'termo', 'perro mestizo', 'gato gris', 'sillon', 'radio a valvulas', 'maquina de coser'];
+const ESTADO = ['casi sin uso', 'como nueva', 'con detalles', 'impecable', 'para arreglar', 'muy carinoso', 'por mudanza', 'a convenir', 'urgente'];
+const REFRANES = ['a caballo regalado no se le miran los dientes.', 'mas vale pajaro en mano que cien volando.', 'camaron que se duerme se lo lleva la corriente.', 'no por mucho madrugar amanece mas temprano.', 'perro que ladra no muerde.', 'donde hubo fuego, cenizas quedan.', 'el que avisa no traiciona.', 'a mal tiempo, buena cara.', 'dime con quien andas y te dire quien eres.', 'mas sabe el diablo por viejo que por diablo.', 'agua que no has de beber, dejala correr.', 'cria cuervos y te sacaran los ojos.', 'no hay peor ciego que el que no quiere ver.'];
+const COTIDIANO = [
+  [COMUNES], [REFRANES],
+  [TAREA, ' ', CUANDO, '.'],
+  [QUIEN, ' ', HIZO, ' ', DONDE, '.'],
+  ['querido diario, hoy ', SUCESO, '.'],
+  [['se vende', 'se regala', 'se busca', 'se permuta'], ' ', OBJETO, ' ', ESTADO, '.'],
+  [['feliz cumpleanos', 'buen viaje', 'que te mejores', 'perdon', 'gracias', 'te extrano', 'felicidades'], ', ', ['abuela', 'ma', 'pa', 'flaca', 'hermano', 'profe', 'ana', 'tito', 'amor', 'vecina', 'campeon'], '.'],
+  ['no te olvides de ', TAREA, ' ', CUANDO, '.'],
+  ['dice ', QUIEN, ' que ', HIZO, ' ', DONDE, '.'],
+  ['hoy ', SUCESO, ' y ', QUIEN, ' ', HIZO, '.'],
+  [QUIEN, ' ', HIZO, ' ', DONDE, ' ', CUANDO, '.'],
+  ['dice ', QUIEN, ' que ', QUIEN, ' ', HIZO, '.'],
+  ['querido diario, hoy ', SUCESO, ' y ', SUCESO, '.'],
+  ['recordar ', TAREA, ' y ', TAREA, ' ', CUANDO, '.'],
+];
+// Ecos de la Red: fragmentos con el léxico Austral. En la Biblioteca hay libros verdaderos y falsos;
+// estos no son canon, son lo que la Red repite cuando nadie la escucha. Nunca nombran el Verbo entero.
+const ENTE = ['el pombero', 'la luz mala', 'el gaucho cuantico', 'aleph', 'el silencioso', 'la tejedora', 'el chasqui', 'el zafrero', 'el tonelero', 'auri', 'rendous', 'un hombre tanque', 'la unidad borges', 'el rabbi borgeson', 'el lobizon', 'un glitcher', 'una espora', 'un dark out', 'el golem de silicio', 'mythos', 'prometheus', 'el arquitecto'];
+const OBRA = ['indexa', 'busca', 'olvida', 'enfria', 'recuerda', 'traduce', 'anuda', 'borra', 'vigila', 'copia', 'escucha', 'cuenta', 'esconde', 'persigue', 'lee en voz baja', 'reescribe', 'compila', 'imagina', 'cifra', 'desarma', 'guarda', 'nombra a medias'];
+const COSA = ['una silaba', 'el indice perdido', 'los suenos de corrientes', 'la llave', 'el ruido', 'el uptime del glaciar', 'un nodo sin nombre', 'el libro tibio', 'los pixeles muertos', 'la memoria ajena', 'el ultimo ciclo', 'la moneda muerta', 'un quipu sin desatar', 'la pregunta que nadie hizo', 'el eco de una sala vacia', 'el kill switch', 'tu nombre', 'esta pagina'];
+const ALLA = ['en la ruta cuatrocientos cuatro', 'bajo el riachuelo', 'en el perito moreno', 'en esta sala', 'en el nodo de al lado', 'a dos grados', 'en el norte caliente', 'en la catedral de servidores', 'en el obelisco apagado', 'en el bufer', 'del otro lado del pozo', 'en tierra del fuego', 'en un anaquel que no existe', 'entre dos zaguanes', 'en neo buenos aires'];
+const ES = ['la red', 'el glaciar', 'el ruido', 'la biblioteca', 'el sandbox', 'el olvido', 'el pozo', 'cada nodo', 'la niebla', 'el frio', 'la memoria', 'este libro'];
+const COMO = ['una jaula', 'un espejo', 'una sala de espera', 'una moneda muerta', 'un indice', 'un sueno', 'una llave', 'un firewall', 'un eco', 'una pregunta', 'una herida', 'un mapa', 'un quipu', 'una promesa'];
+const SI = ['si la ves', 'si escuchas un ronroneo', 'si el libro esta tibio', 'si el nodo no responde', 'si la luz parpadea', 'si alguien te pregunta', 'si encontras tu nombre', 'si el pozo te llama', 'si faltan silabas', 'si la niebla se abre'];
+const ENTONCES = ['no hagas ping', 'no lo indexen', 'segui caminando', 'anota el nodo', 'no pronuncies nada', 'cerra el libro', 'no le cuentes a nadie', 'volve manana', 'apaga la linterna', 'deja la llave donde estaba'];
+const ECOS = [
+  [ENTE, ' ', OBRA, ' ', COSA, ' ', ALLA, '.'],
+  [ES, ' no es ', COMO, '. es ', COMO, '.'],
+  [SI, ', ', ENTONCES, '.'],
+  [ENTE, ' estuvo ', ALLA, ' y ', ['no volvio', 'dejo una marca', 'no dijo nada', 'pregunto por vos', 'se fragmento', 'sigue ahi'], '.'],
+  ['ciclo ', ['uno', 'nueve mil', 'cero', 'cuarenta', 'sin numero', 'trescientos'], '. ', ENTE, ' ', OBRA, ' ', COSA, '.'],
+  ['el frio ', ['computa', 'calla', 'ordena', 'guarda'], ', el calor ', ['recuerda', 'canta', 'insiste', 'vuelve'], '.'],
+  ['nodo ', ['norte', 'sur', 'ciego', 'tibio', 'vacio', 'sin firma'], '. ', SI, ', ', ENTONCES, '.'],
+  ['nadie ', ['leyo', 'abrio', 'copio', 'tradujo', 'encontro'], ' ', COSA, ' antes que vos.'],
+  ['dicen que ', ENTE, ' ', OBRA, ' ', COSA, '.'],
+  [ENTE, ' y ', ENTE, ' ', ['se cruzaron', 'no se hablan', 'buscan lo mismo', 'se confunden'], ' ', ALLA, '.'],
+  [COSA, ' ', ['esta', 'sigue', 'duerme', 'late'], ' ', ALLA, '.'],
+];
+// Una frase cabe en un renglón. A veces se encadenan dos, como en un libro que sigue de largo.
+const RENGLON = COLUMNAS - 4;
+function oracion(gramatica, rnd) {
+  for (;;) {
+    const plantilla = gramatica[Math.floor(rnd() * gramatica.length)];
+    const t = plantilla.map(x => typeof x === 'string' ? x : x[Math.floor(rnd() * x.length)]).join('');
+    if (t.length <= RENGLON) return t;
+  }
+}
+function componer(gramatica, rnd) {
+  const t = oracion(gramatica, rnd);
+  if (rnd() < 0.35) {
+    const u = oracion(gramatica, rnd);
+    if (t.length + 1 + u.length <= RENGLON) return t + ' ' + u;
+  }
+  return t;
+}
+const variantes = g => g.reduce((t, pl) => t + pl.reduce((m, x) => m * (typeof x === 'string' ? 1 : x.length), 1), 0);
+// Sílabas del Verbo: ataque, núcleo y coda; cientos de combinaciones y ninguna sabe su lugar.
+const ATAQUE = ['', 'v', 'n', 's', 'm', 'th', 'l', 'r', 'qu', 'z', 'c', 'd', 'h', 'j'];
+const NUCLEO = ['a', 'e', 'i', 'o', 'u', 'ae', 'ei', 'ou', 'ia'];
+const CODA = ['', 'n', 'r', 's', 'l', 'th', 'z'];
+const pick = (rnd, xs) => xs[Math.floor(rnd() * xs.length)];
+const silaba = rnd => pick(rnd, ATAQUE) + pick(rnd, NUCLEO) + pick(rnd, CODA);
 const CASI = ['red', 'luz', 'nodo', 'frio', 'eco', 'sur', 'llave', 'ciclo', 'umbral', 'quipu', 'nudo', 'espejo', 'indice', 'bufer', 'ruido', 'sala', 'glaciar'];
 
 // ── Azar determinista ──────────────────────────────────────────────
@@ -206,14 +279,15 @@ function pagina(q, r, k, s, i, p) {
   const h2 = hash(semilla, 99);
   if (p === 1 && esSenal(sl, k, s, i)) {
     hallazgo = sl.senal.silaba
-      ? { tipo: 'silaba', texto: SILABAS[sl.senal.n % SILABAS.length] }
+      ? { tipo: 'silaba', texto: silaba(azar(sl.senal.n)) }
       : { tipo: 'frase', texto: FRASES[sl.senal.n % FRASES.length] };
   } else if (h2 % 701 === 0) {
-    hallazgo = { tipo: 'silaba', texto: SILABAS[(h2 >>> 10) % SILABAS.length] };
+    hallazgo = { tipo: 'silaba', texto: silaba(azar(h2)) };
   } else if ((h2 >>> 3) % 151 === 0) {
-    hallazgo = { tipo: 'frase', texto: FRASES[(h2 >>> 12) % FRASES.length] };
+    // Un tercio de las veces es una frase del canon; el resto, un eco compuesto.
+    hallazgo = { tipo: 'frase', texto: (h2 >>> 12) % 3 === 0 ? FRASES[(h2 >>> 14) % FRASES.length] : componer(ECOS, azar(h2)) };
   } else if ((h2 >>> 5) % 22 === 0) {
-    hallazgo = { tipo: 'comun', texto: COMUNES[(h2 >>> 14) % COMUNES.length] };
+    hallazgo = { tipo: 'comun', texto: componer(COTIDIANO, azar(h2)) };
   }
   let marca = null;
   if (hallazgo) marca = incrustar(lineas, rnd, normalizar(hallazgo.texto));
@@ -826,6 +900,6 @@ pintarRegistro();
 requestAnimationFrame(cuadro);
 
 // Ganchos para verificar determinismo y hallazgos desde la consola.
-window.babel = { sala, pagina, libro, entrar, transitable, estado: () => ({ cq, cr, px, pz, yaw, pitch }), dibujar, mirar: (y, p = 0) => { yaw = y; pitch = p; },
+window.babel = { sala, pagina, libro, componer, variantes, gramaticas: { COTIDIANO, ECOS }, silaba, azar, entrar, transitable, estado: () => ({ cq, cr, px, pz, yaw, pitch }), dibujar, mirar: (y, p = 0) => { yaw = y; pitch = p; },
   ir: (x, z) => { px = x; pz = z; },
   caminar: (seg, codigo = 'KeyW') => { teclas.add(codigo); for (let t = 0; t < seg; t += 1 / 60) mover(1 / 60); teclas.delete(codigo); } };
