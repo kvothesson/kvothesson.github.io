@@ -1,0 +1,74 @@
+/* Escena a pantalla completa; todo lo demás flota encima. Frío para la interfaz, ámbar solo para lo que se encuentra. */
+:root {
+  --bg: #081820;
+  --fg: #a9c2cd;
+  --muted: #5f7884;
+  --line: #1c2c34;
+  --ice: #5fd4f5;
+  --amber: #ffad55;
+  --panel: rgba(5, 10, 13, 0.92);
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font-family: var(--mono); overflow: hidden; }
+body { -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+
+#escena { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+#escena.sobre-libro { cursor: pointer; }
+.vineta { position: fixed; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%); }
+
+button { font: inherit; color: var(--fg); background: rgba(8, 16, 20, 0.7); border: 1px solid var(--line); padding: 6px 10px; cursor: pointer; }
+button:hover, button:focus-visible { border-color: var(--ice); color: #e6f8ff; outline: none; }
+
+#hud { position: fixed; top: max(12px, env(safe-area-inset-top)); left: 16px; right: 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-size: 12px; pointer-events: none; }
+#hud .marca { letter-spacing: 0.18em; color: var(--muted); }
+#nodo { color: var(--ice); letter-spacing: 0.08em; }
+#hud .acciones { display: flex; gap: 6px; margin-left: auto; pointer-events: auto; }
+#hud button { font-size: 11px; }
+@media (max-width: 480px) { #hud .marca { display: none; } #hud button { padding: 5px 7px; } }
+
+#ayuda { position: fixed; left: 16px; right: 16px; bottom: max(14px, env(safe-area-inset-bottom)); text-align: center; font-size: 12px; color: var(--muted); pointer-events: none; text-shadow: 0 0 6px #000; }
+#aviso { position: fixed; left: 50%; top: 56px; transform: translateX(-50%); max-width: calc(100% - 32px); padding: 8px 14px; font-size: 12px; background: var(--panel); border: 1px solid var(--line); color: var(--fg); pointer-events: none; }
+#fps { position: fixed; right: 16px; bottom: max(14px, env(safe-area-inset-bottom)); font-size: 11px; color: var(--ice); }
+
+#joy { position: fixed; width: 110px; height: 110px; margin: -55px 0 0 -55px; border: 1px solid rgba(95, 212, 245, 0.35); border-radius: 50%; pointer-events: none; }
+#joy-perilla { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; background: rgba(95, 212, 245, 0.18); border: 1px solid rgba(95, 212, 245, 0.6); }
+
+.panel { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(2, 4, 6, 0.55); }
+.panel[hidden] { display: none; }
+.caja { width: 100%; max-width: 560px; max-height: 100%; overflow: auto; padding: 22px; background: var(--panel); border: 1px solid var(--line); }
+.caja.ancha { max-width: 860px; padding: 16px; }
+
+#intro h1 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: 0.04em; color: #e3f4fa; }
+#intro .sub { margin: 4px 0 18px; font-size: 12px; color: var(--ice); letter-spacing: 0.12em; }
+#intro p { font-size: 13px; line-height: 1.6; }
+#intro .pista { color: var(--amber); }
+#intro .controles { color: var(--muted); font-size: 12px; }
+#entrar { margin-top: 8px; padding: 10px 22px; border-color: var(--ice); color: #e6f8ff; }
+.solo-tactil { display: none; }
+@media (pointer: coarse) { .solo-tactil { display: block; } .solo-puntero { display: none; } }
+
+.libro-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+#libro-titulo { color: #e3f4fa; font-size: 14px; }
+#libro-id { color: var(--muted); font-size: 11px; margin-top: 3px; }
+.hoja { background: #070d10; border: 1px solid var(--line); padding: 12px; overflow: hidden; }
+#pagina { margin: 0; color: #4e6672; line-height: 1.28; white-space: pre; font-family: var(--mono); }
+#pagina mark { background: none; padding: 0; }
+#pagina mark.frase { color: #e6f8ff; text-shadow: 0 0 6px rgba(95, 212, 245, 0.8); }
+#pagina mark.silaba { color: var(--amber); text-shadow: 0 0 8px rgba(255, 173, 85, 0.9); }
+#hallazgo { margin-top: 10px; padding: 10px 12px; border: 1px solid var(--line); font-size: 13px; line-height: 1.5; }
+#hallazgo .tipo { font-size: 11px; letter-spacing: 0.14em; color: var(--ice); }
+#hallazgo.silaba .tipo, #hallazgo.silaba .texto { color: var(--amber); }
+#hallazgo .texto { color: #e6f8ff; font-size: 15px; }
+#hallazgo .nota { color: var(--muted); font-size: 11px; }
+.libro-pie { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; font-size: 12px; }
+.libro-pie input { width: 64px; font: inherit; color: var(--fg); background: #070d10; border: 1px solid var(--line); padding: 5px 6px; }
+#copiar-libro { margin-left: auto; }
+
+#registro-lista { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+#registro-lista li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+#registro-lista a { color: var(--fg); text-decoration: none; }
+#registro-lista .silaba { color: var(--amber); }
+#registro .nota { color: var(--muted); font-size: 11px; }
+.sin-js { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
