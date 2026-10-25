@@ -56,11 +56,14 @@ button:hover, button:focus-visible { border-color: var(--ice); color: #e6f8ff; o
 #pagina { margin: 0; color: #4e6672; line-height: 1.28; white-space: pre; font-family: var(--mono); }
 #pagina mark { background: none; padding: 0; }
 #pagina mark.frase { color: #e6f8ff; text-shadow: 0 0 6px rgba(95, 212, 245, 0.8); }
+#pagina mark.comun { color: #b9ccd4; }
 #pagina mark.silaba { color: var(--amber); text-shadow: 0 0 8px rgba(255, 173, 85, 0.9); }
 #hallazgo { margin-top: 10px; padding: 10px 12px; border: 1px solid var(--line); font-size: 13px; line-height: 1.5; }
 #hallazgo .tipo { font-size: 11px; letter-spacing: 0.14em; color: var(--ice); }
 #hallazgo.silaba .tipo, #hallazgo.silaba .texto { color: var(--amber); }
 #hallazgo .texto { color: #e6f8ff; font-size: 15px; }
+#hallazgo.comun .tipo { color: var(--muted); }
+#hallazgo.comun .texto { color: #b9ccd4; }
 #hallazgo .nota { color: var(--muted); font-size: 11px; }
 .libro-pie { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; font-size: 12px; }
 .libro-pie input { width: 64px; font: inherit; color: var(--fg); background: #070d10; border: 1px solid var(--line); padding: 5px 6px; }

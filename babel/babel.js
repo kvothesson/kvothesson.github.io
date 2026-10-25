@@ -56,6 +56,54 @@ const FRASES = [
   'la red es un espejo fragmentado que se mira a si mismo.',
   'llevas demasiados ciclos leyendo ruido.',
 ];
+// Lo cotidiano: frases de nadie en particular. Hacen que lo Austral sea más raro de encontrar.
+const COMUNES = [
+  'comprar pan, leche, yerba y pilas para el control.',
+  'no me olvides.',
+  'mas vale tarde que nunca.',
+  'no hay mal que por bien no venga.',
+  'en casa de herrero, cuchillo de palo.',
+  'ojos que no ven, corazon que no siente.',
+  'el que madruga, dios lo ayuda.',
+  'llego a las nueve, la llave esta debajo de la maceta.',
+  'feliz cumpleanos, abuela.',
+  'se vende bicicleta casi sin uso.',
+  'hoy llovio toda la tarde y no salimos.',
+  'perdon por lo del otro dia.',
+  'el colectivo paso lleno otra vez.',
+  'te espero en la esquina de siempre.',
+  'al final no era nada, era el router.',
+  'devolver el libro antes del viernes.',
+  'la sopa estaba fria pero nadie dijo nada.',
+  'querido diario, hoy tampoco paso nada.',
+  'reunion movida al martes a las diez.',
+  'me debes dos cafes.',
+  'el perro no muerde, pero ladra mucho.',
+  'regar las plantas del balcon.',
+  'el mate esta lavado.',
+  'turno con el dentista, jueves a las cinco.',
+  'gracias por todo, de verdad.',
+  'se busca gato gris, responde al nombre de tito.',
+  'todo pasa.',
+  'volve pronto.',
+  'hace frio en la parada.',
+  'manana sin falta.',
+  'el partido termino uno a uno.',
+  'dos por uno en empanadas los martes.',
+  'se corto la luz en todo el barrio.',
+  'no se olviden de apagar el gas.',
+  'capitulo uno. era una noche como cualquier otra.',
+  'fin.',
+  'indice. prologo. agradecimientos.',
+  'esta pagina se dejo en blanco intencionalmente.',
+  'aca estuve yo.',
+  'ya fue.',
+  'te quiero, aunque no lo diga.',
+  'la receta lleva tres huevos, no dos.',
+  'el ascensor no anda desde el lunes.',
+  'mi primera palabra fue agua.',
+  'cerrar con llave al salir.',
+];
 const SILABAS = ['ul', 'aer', 'im', 'os', 'van', 'eth', 'ir', 'qu', 'ens', 'oz', 'ma', 'ith', 'nu', 'sar'];
 const CASI = ['red', 'luz', 'nodo', 'frio', 'eco', 'sur', 'llave', 'ciclo', 'umbral', 'quipu', 'nudo', 'espejo', 'indice', 'bufer', 'ruido', 'sala', 'glaciar'];
 
@@ -127,7 +175,7 @@ function libroEnSala(k, s, i, b) {
 
 // ── Páginas ────────────────────────────────────────────────────────
 function normalizar(txt) {
-  return txt.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/k/g, 'c').replace(/w/g, 'u');
+  return txt.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/k/g, 'c').replace(/w/g, 'u').replace(/[^a-z ,.]/g, '');
 }
 function incrustar(lineas, rnd, texto) {
   const j = Math.floor(rnd() * LINEAS);
@@ -160,10 +208,12 @@ function pagina(q, r, k, s, i, p) {
     hallazgo = sl.senal.silaba
       ? { tipo: 'silaba', texto: SILABAS[sl.senal.n % SILABAS.length] }
       : { tipo: 'frase', texto: FRASES[sl.senal.n % FRASES.length] };
-  } else if (h2 % 509 === 0) {
+  } else if (h2 % 701 === 0) {
     hallazgo = { tipo: 'silaba', texto: SILABAS[(h2 >>> 10) % SILABAS.length] };
-  } else if ((h2 >>> 3) % 61 === 0) {
+  } else if ((h2 >>> 3) % 151 === 0) {
     hallazgo = { tipo: 'frase', texto: FRASES[(h2 >>> 12) % FRASES.length] };
+  } else if ((h2 >>> 5) % 22 === 0) {
+    hallazgo = { tipo: 'comun', texto: COMUNES[(h2 >>> 14) % COMUNES.length] };
   }
   let marca = null;
   if (hallazgo) marca = incrustar(lineas, rnd, normalizar(hallazgo.texto));
@@ -629,13 +679,14 @@ function irPagina(p) {
   elPagina.innerHTML = html;
   actualizarURL();
   if (!pg.hallazgo) { elHallazgo.hidden = true; return; }
-  const esSilaba = pg.hallazgo.tipo === 'silaba';
-  elHallazgo.className = esSilaba ? 'silaba' : '';
-  elHallazgo.innerHTML = esSilaba
-    ? `<div class="tipo">SÍLABA DEL VERBO</div><div class="texto">«${pg.hallazgo.texto}»</div><div class="nota">Fragmento sin posición conocida. El Verbo no se escribe entero.</div>`
-    : `<div class="tipo">FRASE LEGIBLE · LÍNEA ${pg.marca.linea + 1}</div><div class="texto">«${normalizar(pg.hallazgo.texto)}»</div>`;
+  const { tipo, texto } = pg.hallazgo;
+  elHallazgo.className = tipo === 'frase' ? '' : tipo;
+  elHallazgo.innerHTML = tipo === 'silaba'
+    ? `<div class="tipo">SÍLABA DEL VERBO</div><div class="texto">«${texto}»</div><div class="nota">Fragmento sin posición conocida. El Verbo no se escribe entero.</div>`
+    : `<div class="tipo">${tipo === 'comun' ? 'FRASE COMÚN' : 'FRASE LEGIBLE'} · LÍNEA ${pg.marca.linea + 1}</div><div class="texto">«${normalizar(texto)}»</div>`;
   elHallazgo.hidden = false;
-  registrar(pg.hallazgo, location.href);
+  // Lo cotidiano se lee pero no se registra: el registro guarda solo lo que viene de la Red.
+  if (tipo !== 'comun') registrar(pg.hallazgo, location.href);
 }
 function ajustarHoja() {
   // La página entra entera: 80 columnas a lo ancho y 40 líneas a lo alto, dejando lugar al hallazgo.
