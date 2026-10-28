@@ -15,7 +15,7 @@ en su propio repo y GitHub Pages lo sirve en `kvothesson.com/<repo>/`.
 Lo que queda acá:
 
 - `CNAME`: el dominio. Todas las project pages lo heredan.
-- `index.html`: la home, en blanco y sin indexar.
+- `index.html`: la landing, con una tarjeta por proyecto. Al sumar un proyecto, agregar su tarjeta.
 - `robots.txt` y `sitemap.xml`: un solo sitemap para todo el dominio. Al sumar un proyecto, agregarlo ahí.
 - `404.html`: además de la página de error, redirige las URLs viejas `/decretos/` y `/plugins/` a `/el-gran-presidente/` y `/ar-plugins/`, porque esos links ya circularon. Para sumar otra mudanza, agregarla en `MUDANZAS`.
 

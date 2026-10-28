@@ -3,9 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Kvothesson</title>
-<style>html,body{margin:0;height:100%;background:#000}</style>
+<meta name="description" content="Proyectos de Kvothesson: el Universo Austral, herramientas abiertas y propuestas para Argentina. Todo hecho con código.">
+<link rel="canonical" href="https://kvothesson.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kvothesson">
+<meta property="og:description" content="El Universo Austral, herramientas abiertas y propuestas para Argentina. Todo hecho con código.">
+<meta property="og:url" content="https://kvothesson.com/">
+<meta name="theme-color" content="#07090d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,2 28,9 28,23 16,30 4,23 4,9' fill='none' stroke='%2366e0ff' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#07090d; --panel:#0d1118; --line:#1c2430; --text:#d8dee8; --dim:#7d8898;
+  --cyan:#66e0ff; --magenta:#ff5fb4; --amber:#ffc05c;
+  --mono:ui-monospace,"Cascadia Code",Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+canvas#hex{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 16px 64px}
+a{color:inherit}
+
+header{min-height:62vh;display:flex;flex-direction:column;justify-content:center;padding:72px 0 40px}
+.sig{font:12px var(--mono);letter-spacing:.2em;color:var(--cyan);text-transform:uppercase;margin:0 0 18px}
+.sig::before{content:"";display:inline-block;width:8px;height:8px;background:var(--cyan);margin-right:10px;box-shadow:0 0 12px var(--cyan);animation:blink 2.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+h1{font:700 clamp(44px,9vw,104px)/.95 var(--mono);letter-spacing:-.04em;margin:0}
+h1 span{color:var(--cyan);text-shadow:0 0 28px rgba(102,224,255,.35)}
+.lead{max-width:560px;font-size:clamp(17px,2.2vw,20px);color:var(--dim);margin:22px 0 0}
+.lead b{color:var(--text);font-weight:500}
+
+section{margin-top:48px}
+h2{font:500 12px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+
+.card{--c:var(--cyan);position:relative;display:flex;flex-direction:column;gap:8px;padding:22px 22px 20px;background:rgba(13,17,24,.82);border:1px solid var(--line);border-radius:6px;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s;backdrop-filter:blur(3px)}
+.card:hover,.card:focus-visible{border-color:var(--c);transform:translateY(-2px);box-shadow:0 0 0 1px var(--c),0 10px 40px -12px var(--c);outline:none}
+.card .tag{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.card h3{font:600 22px/1.2 var(--sans);margin:0}
+.card p{margin:0;color:var(--dim);font-size:15px}
+.card .go{margin-top:auto;padding-top:10px;font:13px var(--mono);color:var(--c)}
+.card .go::after{content:" →";transition:margin .2s}
+.card:hover .go::after{margin-left:4px}
+.austral .card{--c:var(--cyan)}
+.tools .card{--c:var(--amber)}
+.ideas .card{--c:var(--magenta)}
+
+footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font:13px var(--mono);color:var(--dim)}
+footer a{color:var(--dim);text-decoration:none}
+footer a:hover{color:var(--cyan)}
+
+@media (prefers-reduced-motion:reduce){.sig::before{animation:none}.card{transition:none}}
+@media (max-width:420px){.grid{grid-template-columns:1fr}header{min-height:auto;padding-top:56px}}
+</style>
 </head>
-<body></body>
+<body>
+<canvas id="hex" aria-hidden="true"></canvas>
+<main>
+  <header>
+    <p class="sig">nodo activo</p>
+    <h1>kvothes<span>son</span></h1>
+    <p class="lead">Cosas hechas con código desde el sur. <b>Un universo de ficción</b>, <b>herramientas abiertas</b> y <b>propuestas para Argentina</b>.</p>
+  </header>
+
+  <section class="austral">
+    <h2>Universo Austral</h2>
+    <div class="grid">
+      <a class="card" href="/babel/">
+        <span class="tag">Three.js</span>
+        <h3>La Biblioteca de Babel</h3>
+        <p>Caminá por hexágonos infinitos. Cada sala tiene libros fijos para siempre y casi todo es ruido.</p>
+        <span class="go">entrar</span>
+      </a>
+      <a class="card" href="/ruta-404/">
+        <span class="tag">Juego</span>
+        <h3>Ruta 404</h3>
+        <p>Recorré la ruta con Auri, recuperá memorias y volvé antes de que la red te encuentre.</p>
+        <span class="go">jugar</span>
+      </a>
+      <a class="card" href="/radio/">
+        <span class="tag">Música generativa</span>
+        <h3>Radio Austral</h3>
+        <p>Cumbia glitch, milonga cyberpunk y folklore electrónico. Nunca suena igual dos veces.</p>
+        <span class="go">escuchar</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="tools">
+    <h2>Herramientas</h2>
+    <div class="grid">
+      <a class="card" href="/ar-plugins/">
+        <span class="tag">Claude Code · Codex</span>
+        <h3>AR Plugins</h3>
+        <p>15 plugins gratis: dólar e inflación en vivo, trámites, sueldos, derechos, salud y monotributo.</p>
+        <span class="go">instalar</span>
+      </a>
+      <a class="card" href="/chasqui/es/">
+        <span class="tag">Windows · Open source</span>
+        <h3>chasqui</h3>
+        <p>Traductor de voz en tiempo real para llamadas, YouTube y streams. Corre con tu propia clave.</p>
+        <span class="go">ver</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="ideas">
+    <h2>Propuestas</h2>
+    <div class="grid">
+      <a class="card" href="/el-gran-presidente/">
+        <span class="tag">Política pública</span>
+        <h3>Los Decretos del Gran Presidente</h3>
+        <p>Propuestas abiertas: regalías en cómputo por los data centers de IA e IA de uso diario para cada ciudadano.</p>
+        <span class="go">leer</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>kvothesson.com</span>
+    <a href="https://github.com/kvothesson">github.com/kvothesson</a>
+  </footer>
+</main>
+<script>
+// Fondo: grilla hexagonal tenue con algunas celdas que se encienden.
+(function(){
+  var cv=document.getElementById('hex'),cx=cv.getContext('2d');
+  var R=28,W,H,cells=[],dpr=Math.min(window.devicePixelRatio||1,2);
+  var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function build(){
+    W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+    cells=[];var w=Math.sqrt(3)*R,h=1.5*R;
+    for(var r=-1;r*h<H+R;r++)for(var c=-1;c*w<W+w;c++)
+      cells.push({x:c*w+(r&1?w/2:0),y:r*h,g:0});
+  }
+  function hex(x,y){cx.beginPath();for(var i=0;i<6;i++){var a=Math.PI/3*i+Math.PI/6;cx.lineTo(x+R*.94*Math.cos(a),y+R*.94*Math.sin(a));}cx.closePath();}
+  function frame(){
+    cx.clearRect(0,0,W,H);
+    if(Math.random()<.08){cells[(Math.random()*cells.length)|0].g=1;}
+    for(var i=0;i<cells.length;i++){
+      var k=cells[i],fade=1-Math.min(1,k.y/H)*.7;
+      hex(k.x,k.y);
+      cx.strokeStyle='rgba(102,224,255,'+(0.045*fade+k.g*.35)+')';cx.lineWidth=1;cx.stroke();
+      if(k.g>0){cx.fillStyle='rgba(102,224,255,'+(k.g*.06)+')';cx.fill();k.g-=.012;}
+    }
+    if(!still)requestAnimationFrame(frame);
+  }
+  addEventListener('resize',function(){build();if(still)frame();});
+  build();frame();
+})();
+</script>
+</body>
 </html>
