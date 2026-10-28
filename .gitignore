@@ -1,7 +1,1 @@
-__pycache__/
-*.pyc
-
-# Nada de credenciales acá: sync.py las lee del workspace, fuera de este repo.
-client_secret.json
-*.pickle
-.env
+.DS_Store
