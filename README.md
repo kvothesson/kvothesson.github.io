@@ -17,6 +17,6 @@ Lo que queda acá:
 - `CNAME`: el dominio. Todas las project pages lo heredan.
 - `index.html`: la home, en blanco y sin indexar.
 - `robots.txt` y `sitemap.xml`: un solo sitemap para todo el dominio. Al sumar un proyecto, agregarlo ahí.
-- `decretos/` y `plugins/`: redirecciones de las URLs viejas a `/el-gran-presidente/` y `/ar-plugins/`, porque esos links ya circularon.
+- `404.html`: además de la página de error, redirige las URLs viejas `/decretos/` y `/plugins/` a `/el-gran-presidente/` y `/ar-plugins/`, porque esos links ya circularon. Para sumar otra mudanza, agregarla en `MUDANZAS`.
 
 Un proyecto nuevo no va en este repo: va en un repo propio con Pages activado.

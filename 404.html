@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kvothesson</title>
+<script>
+// URLs viejas que ya circularon: se mudaron a la Pages de su repo.
+var MUDANZAS = {"/decretos": "/el-gran-presidente", "/plugins": "/ar-plugins"};
+var p = location.pathname;
+for (var vieja in MUDANZAS) {
+  if (p === vieja || p.indexOf(vieja + "/") === 0) {
+    location.replace(MUDANZAS[vieja] + (p.slice(vieja.length) || "/") + location.search + location.hash);
+  }
+}
+</script>
+<style>html,body{margin:0;height:100%;background:#000;color:#555;font:14px monospace}p{padding:16px}</style>
+</head>
+<body><p>404</p></body>
+</html>
