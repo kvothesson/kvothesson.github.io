@@ -6,15 +6,51 @@
   <url><loc>https://kvothesson.com/babel/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://kvothesson.com/ruta-404/</loc><lastmod>2026-10-28</lastmod></url>
   <url>
-    <loc>https://kvothesson.com/chasqui/</loc><lastmod>2026-10-21</lastmod>
+    <loc>https://kvothesson.com/chasqui/</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/"/>
   </url>
   <url>
-    <loc>https://kvothesson.com/chasqui/es/</loc><lastmod>2026-10-21</lastmod>
+    <loc>https://kvothesson.com/chasqui/es/</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/translate-calls/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/translate-calls/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traducir-llamadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/translate-calls/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/es/traducir-llamadas/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/translate-calls/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traducir-llamadas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/translate-calls/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/translate-youtube/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/translate-youtube/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traducir-youtube/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/translate-youtube/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/es/traducir-youtube/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/translate-youtube/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traducir-youtube/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/translate-youtube/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/windows-voice-translator/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/windows-voice-translator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traductor-de-voz-windows/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/windows-voice-translator/"/>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/chasqui/es/traductor-de-voz-windows/</loc><lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/windows-voice-translator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kvothesson.com/chasqui/es/traductor-de-voz-windows/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kvothesson.com/chasqui/windows-voice-translator/"/>
   </url>
 </urlset>
