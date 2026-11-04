@@ -15,7 +15,7 @@
 <style>
 :root{
   --bg:#07090d; --panel:#0d1118; --line:#1c2430; --text:#d8dee8; --dim:#7d8898;
-  --cyan:#66e0ff; --magenta:#ff5fb4; --amber:#ffc05c;
+  --cyan:#66e0ff; --magenta:#ff5fb4; --amber:#ffc05c; --green:#7cf0a8;
   --mono:ui-monospace,"Cascadia Code",Consolas,monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
@@ -51,9 +51,10 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 .austral .card{--c:var(--cyan)}
 .tools .card{--c:var(--amber)}
 .ideas .card{--c:var(--magenta)}
+.explore .card{--c:var(--green)}
 
 footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font:13px var(--mono);color:var(--dim)}
-footer a{color:var(--dim);text-decoration:none}
+footer a{color:var(--dim);text-decoration:none;display:inline-block;padding:12px 0;margin:-12px 0}
 footer a:hover{color:var(--cyan)}
 
 @media (prefers-reduced-motion:reduce){.sig::before{animation:none}.card{transition:none}}
@@ -113,6 +114,24 @@ footer a:hover{color:var(--cyan)}
         <h3>chasqui</h3>
         <p>Traductor de voz en tiempo real para llamadas, YouTube y streams. Corre con tu propia clave.</p>
         <span class="go">ver</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="explore">
+    <h2>Exploradores</h2>
+    <div class="grid">
+      <a class="card" href="/anecdotas/">
+        <span class="tag">Podcast</span>
+        <h3>Anécdotas Explorer</h3>
+        <p>Más de 280 historias de Anécdotas de Nico de Tracy para elegir por ganas, tiempo, tema y lugar.</p>
+        <span class="go">elegir</span>
+      </a>
+      <a class="card" href="/OceaniDex/">
+        <span class="tag">Mar Argentino</span>
+        <h3>OceaniDex</h3>
+        <p>Todo lo que vio el ROV en el cañón submarino de Mar del Plata, con foto, profundidad y el segundo exacto del video.</p>
+        <span class="go">explorar</span>
       </a>
     </div>
   </section>
