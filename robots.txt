@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kvothesson.com/sitemap.xml
+Sitemap: https://kvothesson.com/cuando-viene/sitemap.xml
