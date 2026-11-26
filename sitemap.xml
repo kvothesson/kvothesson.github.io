@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://kvothesson.com/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://kvothesson.com/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://kvothesson.com/el-gran-presidente/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://kvothesson.com/ar-plugins/</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://kvothesson.com/babel/</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://kvothesson.com/ruta-404/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://kvothesson.com/babel/</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://kvothesson.com/ruta-404/</loc><lastmod>2026-11-25</lastmod></url>
   <url>
     <loc>https://kvothesson.com/chasqui/</loc><lastmod>2026-10-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kvothesson.com/chasqui/"/>
@@ -60,25 +60,49 @@
     <loc>https://kvothesson.com/tachan/privacidad.html</loc><lastmod>2026-11-02</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/radio/</loc><lastmod>2026-11-04</lastmod>
+    <loc>https://kvothesson.com/radio/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/anecdotas/</loc><lastmod>2026-11-04</lastmod>
+    <loc>https://kvothesson.com/anecdotas/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/OceaniDex/</loc><lastmod>2026-11-04</lastmod>
+    <loc>https://kvothesson.com/OceaniDex/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/carrera/</loc><lastmod>2026-11-21</lastmod>
+    <loc>https://kvothesson.com/carrera/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/riacho/</loc><lastmod>2026-11-09</lastmod>
+    <loc>https://kvothesson.com/carrera/especificacion.html</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/el-ramal/</loc><lastmod>2026-11-09</lastmod>
+    <loc>https://kvothesson.com/carrera/verificacion.html</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/habemus/</loc><lastmod>2026-11-09</lastmod>
+    <loc>https://kvothesson.com/carrera/delegacion.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/carrera/limites.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/carrera/comportamiento.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/carrera/economia.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/carrera/criterio.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/carrera/responsabilidad.html</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/riacho/</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/el-ramal/</loc><lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://kvothesson.com/habemus/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://kvothesson.com/potrero-404/</loc><lastmod>2026-11-16</lastmod>
@@ -87,10 +111,10 @@
     <loc>https://kvothesson.com/potrero-404/ranking/</loc><lastmod>2026-11-16</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/generala-maldita/</loc><lastmod>2026-11-19</lastmod>
+    <loc>https://kvothesson.com/generala-maldita/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://kvothesson.com/cuando-viene/</loc><lastmod>2026-11-19</lastmod>
+    <loc>https://kvothesson.com/cuando-viene/</loc><lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://kvothesson.com/cuando-viene/lucho-mellera/</loc><lastmod>2026-11-19</lastmod>
