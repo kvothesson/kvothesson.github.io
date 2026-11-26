@@ -1,0 +1,41 @@
+# Kvothesson
+
+> Proyectos gratis hechos con código desde Argentina: juegos del Universo Austral que se juegan en el navegador, herramientas abiertas, exploradores de datos, un curso para trabajar con agentes de IA y propuestas de política pública. Todo está en castellano (chasqui también en inglés), no pide cuenta y el código está en https://github.com/kvothesson.
+
+Cada proyecto vive en su propio repositorio y se publica en https://kvothesson.com/<proyecto>/. El Universo Austral es una ficción propia: una Argentina futura con folklore, red y apagones.
+
+## Juegos del Universo Austral
+
+- [La Biblioteca de Babel](https://kvothesson.com/babel/): caminá en 3D por hexágonos infinitos inspirados en el cuento de Borges; cada sala tiene libros fijos para siempre y casi todo es ruido.
+- [Ruta 404](https://kvothesson.com/ruta-404/): recorré la ruta con Auri, recuperá memorias y volvé antes de que la red te encuentre.
+- [Riacho](https://kvothesson.com/riacho/): una lancha de noche por el Delta del Paraná; prendé seis faroles hasta la torre sin que te alcance la luz mala.
+- [El Ramal](https://kvothesson.com/el-ramal/): roguelite incremental de un tren fantasma en un ramal cerrado en 1993; armalo vagón por vagón y reabrí los pueblos.
+- [Potrero 404](https://kvothesson.com/potrero-404/): fútbol con autos online gratis, contra la máquina o con amigos por link. Tiene [ranking](https://kvothesson.com/potrero-404/ranking/).
+- [Habemus Fieles](https://kvothesson.com/habemus/): incremental del Papa que llega en papamóvil y convierte a los argentinos sobre el mapa real de Palermo.
+- [Generala maldita](https://kvothesson.com/generala-maldita/): roguelike de dados; ocho mesas de generala contra el Mandinga en una pulpería.
+- [Radio Austral](https://kvothesson.com/radio/): música generativa en el navegador (cumbia glitch, milonga cyberpunk, folklore electrónico) que nunca suena igual.
+
+## Herramientas
+
+- [AR Plugins](https://kvothesson.com/ar-plugins/): plugins gratis para Claude Code y Codex con datos de Argentina: dólar e inflación en vivo, trámites, sueldos, derechos, salud y monotributo.
+- [Tachán](https://kvothesson.com/tachan/): app gratis y libre para pasar fotos, archivos y texto del celular Android a la PC con Windows por wifi, sin cable, sin cuenta y sin servidores. [In English](https://kvothesson.com/tachan/en.html).
+- [chasqui](https://kvothesson.com/chasqui/): traductor de voz en tiempo real para Windows, para llamadas de Zoom, Meet y Teams, YouTube y streams; open source, con tu propia clave. [En castellano](https://kvothesson.com/chasqui/es/).
+
+## Exploradores
+
+- [Anécdotas Explorer](https://kvothesson.com/anecdotas/): explorador independiente (no oficial) de las historias del podcast Anécdotas de Nico de Tracy, para elegir por ganas, tiempo, tema y lugar.
+- [OceaniDex](https://kvothesson.com/OceaniDex/): catálogo de la fauna que vio el ROV en el cañón submarino de Mar del Plata, con foto, profundidad y el segundo exacto del video.
+- [Cuándo viene](https://kvothesson.com/cuando-viene/): fechas de shows de artistas en un mapa de Argentina y aviso gratis cuando anuncian uno cerca tuyo. Ejemplo: [Lucho Mellera](https://kvothesson.com/cuando-viene/lucho-mellera/).
+
+## Cursos
+
+- [La carrera que no existía](https://kvothesson.com/carrera/): curso gratis de ocho materias para trabajar con agentes de IA: especificación, verificación y evals, delegación, límites y permisos, comportamiento de modelos, economía del cómputo, criterio de producto y responsabilidad.
+
+## Propuestas
+
+- [Los Decretos del Gran Presidente](https://kvothesson.com/el-gran-presidente/): propuestas abiertas de política pública para Argentina, como regalías en cómputo por los data centers de IA e IA de uso diario para cada ciudadano.
+
+## Optional
+
+- [Mapa del sitio](https://kvothesson.com/sitemap.xml)
+- [Código](https://github.com/kvothesson)
